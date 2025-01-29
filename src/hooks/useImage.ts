@@ -1,4 +1,4 @@
-import { initDB } from '@/services/db';
+import { initDB } from '@/config/db';
 import { useCallback, useState } from 'react';
 import { toast } from 'sonner';
 

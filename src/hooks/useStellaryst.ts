@@ -1,4 +1,4 @@
-import { initDB } from '@/services/db';
+import { initDB } from '@/config/db';
 import { Stellaryst } from '@/types';
 import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';

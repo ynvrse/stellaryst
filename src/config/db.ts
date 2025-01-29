@@ -10,7 +10,7 @@ export interface Product {
 }
 
 export const initDB = async () => {
-    return openDB('database', 11, {
+    return openDB('stellaryst_db', 11, {
         upgrade(db) {
             if (!db.objectStoreNames.contains('images')) {
                 db.createObjectStore('images', { keyPath: 'id', autoIncrement: true });
