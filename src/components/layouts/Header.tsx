@@ -28,13 +28,17 @@ export function Header() {
                     <SheetTrigger asChild>
                         <div className="mr-6 flex items-center space-x-1">
                             <Icons.logo className="h-10 w-10" />
-                            <span className="text-accent inline-block text-lg">{stellaryst?.appName}</span>
+                            <span className="dark:text-accent text-primary inline-block text-lg font-bold">
+                                {stellaryst?.appName}
+                            </span>
                         </div>
                     </SheetTrigger>
                     <SheetContent side="left" className="pr-0 sm:max-w-xs">
                         <div onClick={() => setOpen(false)} className="flex items-center space-x-1">
                             <Icons.logo className="h-10 w-10" />
-                            <span className="text-accent inline-block font-bold">{stellaryst?.appName}</span>
+                            <span className="dark:text-accent text-primary inline-block font-bold">
+                                {stellaryst?.appName}
+                            </span>
                         </div>
                         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-8 pl-8">
                             <Accordion
