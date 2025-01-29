@@ -57,7 +57,7 @@ const useStellaryst = () => {
     const resetApp = useCallback(async (databaseName: string) => {
         await indexedDB.deleteDatabase(databaseName);
         setTimeout(() => {
-            window.location.href = '/';
+            navigate('/');
         }, 500);
         toast.success(`Aplikasi Berhasil Direset`);
     }, []);
